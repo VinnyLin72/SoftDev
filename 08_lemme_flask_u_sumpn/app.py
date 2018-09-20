@@ -19,5 +19,5 @@ def route3():
 	return "3st route"
 
 if __name__ = "__main__":
-	app.denug = True
+	app.debug = True
 	app.run()
