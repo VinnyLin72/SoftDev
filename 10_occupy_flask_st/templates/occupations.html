@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Occupations</title>
+</head>
+<body>
+  <u>Random Occupation:</u> {{ random }}
+	<table>
+		<tr>
+			<th>{{ header[0] }}</th>
+			<th>{{ header[1] }}</th>
+		</tr>
+		{% for key in jobs %}
+			<tr>
+				<td>{{ key }}</td>
+				<td>{{ jobs[key] }}</td>
+			</tr>
+		{% endfor %}
+	</table>
+<body>
+</html>
