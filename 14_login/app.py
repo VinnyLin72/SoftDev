@@ -13,14 +13,14 @@ users = {"person" : "pass"}
 
 @app.route("/")
 def index():
-    if "username" not in session.keys():
-        return redirect(url_for("login"))
-    return render_template("index.html", person = session["username"])
+    if "username" not in session.keys(): # checks to see if we know you
+        return redirect(url_for("login")) # if not redirects you to login page
+    return render_template("index.html", person = session["username"]) # if yes shows you welcome page
 
 @app.route("/login", methods = ["GET", "POST"])
 def login():
     if request.method == "GET":
-        return render_template("login.html")
+        return render_template("login.html") # if redirected by index() shows the login page
     elif request.form.get("username") not in users.keys():
         return render_template("error.html", error = "your username does not exist!")
     elif users[request.form.get("username")] != request.form.get("password"):
