@@ -1,0 +1,35 @@
+<!-- 
+Team Strawberry -- Vincent Lin, Clara Mohri
+SoftDev pd7  
+K15 -- Oh yes, perhaps I do...
+2018-10-01  
+-->
+
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+      {% block head %}
+      <title>
+	{% block title %}
+	Index
+	{% endblock %}
+      </title>
+      {% endblock %}
+    </head>  
+
+    <body>	
+      {% block body %}
+      Welcome, {{person}}
+      <br>
+      <form action = "/logout" method = "POST">
+	<input type = "submit" name = "logout" value = "Log Out">
+      </form>
+       {% endblock %}
+      {% block footer %}
+      &copy; Team Strawberry
+      {% endblock %}   
+    </body>
+      
+</html>

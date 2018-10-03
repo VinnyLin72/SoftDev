@@ -1,0 +1,34 @@
+<!--
+Team Strawberry
+SoftDev pd7
+K15 -- Oh yes, perhaps I do...
+2018-10-03
+-->
+
+<!DOCTYPE html>
+<html>
+
+{% extends 'index.html' %}
+  
+  <head>
+    
+    {% block title %}Error{% endblock %}
+
+  </head>
+
+
+    <body>
+      {% block body %}
+      
+      {% set msgs = get_flashed_messages() %}
+      {% for each in msgs %}
+      {{ each }}
+      <br>
+      {% endfor %}      
+      <br>      
+      Click <a href = "/" > here </a> to try again
+      
+      {% endblock %}
+    </body>
+  
+</html>

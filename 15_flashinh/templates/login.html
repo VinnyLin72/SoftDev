@@ -1,0 +1,29 @@
+<!-- Team Strawberry -- Vincent Lin, Clara Mohri 
+SoftDev pd7  
+K15 -- Oh yes, perhaps I do...
+2018-10-02
+-->
+
+<!DOCTYPE html>
+<html>
+
+  {% extends 'index.html' %}
+  
+  <head>
+    
+    {% block title %} Login {% endblock %}
+
+  </head>
+
+
+  <body>
+  {% block body %}
+    <form action = "/login" method = "POST">
+      <input type = "text" name = "username">
+      <input type = "password" name = "password">
+      <input type = "submit" name = "submit">
+    </form>
+    {% endblock %}
+  </body>
+
+</html>
