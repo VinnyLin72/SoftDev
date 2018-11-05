@@ -1,0 +1,54 @@
+html{
+  width: 900px;
+}
+
+body{
+  font-family: "Arial";
+  background-color: #606060;
+}
+
+h1{
+  color: #FFFFFF;
+  text-align: center;
+  background-color: #AAAAAA;
+}
+
+#middle{
+  background-color: #707070;
+  position: relative;
+  top: -22px;
+}
+
+h3{
+  position: relative;
+  left: 10px;
+  top: 5px;
+}
+
+ul{
+  list-style: none;
+  position: relative;
+  left: -28px;
+}
+
+a{
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+#main{
+  position: relative;
+  left: 200px;
+  top: -105px;
+  width: 680px;
+}
+
+#copy{
+  background-color: #444444;
+  background-size: auto;
+  text-align: right;
+  color: #707070;
+  position: relative;
+  top: -100px;
+  line-height: 3;
+}
