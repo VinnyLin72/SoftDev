@@ -1,3 +1,8 @@
+// Team WestVirginia - Jared Asch, Vincent Lin
+// SoftDev1 pd07
+// K28 -- Sequential Programming
+// 2018-12-19
+
 let fibonacci = (n) => {
     if(n < 2){
 	return 1;
